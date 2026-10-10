@@ -151,6 +151,76 @@
   </p>
 </section>
 
+    
+<section class="feedback-section" id="feedback">
+  <p class="eyebrow">WE VALUE YOUR FEEDBACK</p>
+  <h2>Help us serve you better.</h2>
+  <p>
+    Have a suggestion, compliment, or concern?
+    We'd love to hear from you.
+  </p>
+
+  <form
+    class="feedback-form"
+    action="https://formsubmit.co/knaveenreddy.apt@gmail.com"
+    method="POST"
+  >
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Customer Feedback - Aahaa Restaurant"
+    >
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+
+    <label for="feedbackName">Your name</label>
+    <input
+      id="feedbackName"
+      type="text"
+      name="name"
+      placeholder="Enter your name"
+      maxlength="100"
+      required
+    >
+
+    <label for="feedbackEmail">Your email (optional)</label>
+    <input
+      id="feedbackEmail"
+      type="email"
+      name="email"
+      placeholder="you@example.com"
+    >
+
+    <label for="feedbackType">Feedback type</label>
+    <select id="feedbackType" name="Feedback type" required>
+      <option value="">Select an option</option>
+      <option value="Suggestion">Suggestion</option>
+      <option value="Compliment">Compliment</option>
+      <option value="Food quality">Food quality</option>
+      <option value="Service">Service</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="feedbackMessage">Your feedback</label>
+    <textarea
+      id="feedbackMessage"
+      name="message"
+      rows="5"
+      maxlength="2000"
+      placeholder="Tell us how we can improve..."
+      required
+    ></textarea>
+
+    <button class="primary-button" type="submit">
+      Send Feedback
+    </button>
+
+    <p class="feedback-note">
+      Your feedback will be sent to the restaurant owner by email.
+    </p>
+  </form>
+</section>
+
 
     <section class="location-section" id="location">
       <p class="eyebrow">WE'RE EASY TO FIND</p>
