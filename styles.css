@@ -118,3 +118,75 @@ footer h2 span{color:var(--orange)}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important}
 }
+
+.menu-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+  max-width: 720px;
+  margin: 24px 0;
+}
+
+.menu-controls label {
+  font-weight: 600;
+}
+
+.menu-controls input,
+.menu-controls select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.menu-card {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #fff;
+  color: #222;
+}
+
+.menu-card h3 {
+  margin-top: 0;
+  color: #c75b22;
+}
+
+.menu-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-card li strong {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .menu-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
