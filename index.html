@@ -118,20 +118,39 @@
       </div>
     </section>
 
-    <section class="menu-section" id="menu">
-      <p class="eyebrow">GOOD FOOD STARTS HERE</p>
-      <h2>Explore our menu.</h2>
-      <p>
-        Browse the dishes and prices in our restaurant menu.
-        Please contact us to confirm current prices and availability.
-      </p>
 
-      <a class="primary-button"
-         href="assets/aahaa-menu.pdf"
-         target="_blank" rel="noopener noreferrer">
-        View Full Menu PDF ↗
-      </a>
-    </section>
+<section class="menu-section" id="menu">
+  <p class="eyebrow">GOOD FOOD STARTS HERE</p>
+  <h2>Explore our menu.</h2>
+  <p>Search our dishes by name or browse a category.</p>
+
+  <div class="menu-controls">
+    <label for="menuSearch">Search dishes</label>
+    <input
+      id="menuSearch"
+      type="search"
+      placeholder="Try chicken biryani, mandi, Apollo fish..."
+    >
+
+    <label for="menuCategory">Category</label>
+    <select id="menuCategory">
+      <option value="All">All categories</option>
+    </select>
+  </div>
+
+  <p id="menuCount" aria-live="polite"></p>
+  <div id="menuResults" class="menu-grid" aria-live="polite"></div>
+
+  <p>
+    <a
+      class="primary-button"
+      href="assets/aahaa-menu.pdf"
+      target="_blank"
+      rel="noopener"
+    >View original menu PDF ↗</a>
+  </p>
+</section>
+
 
     <section class="location-section" id="location">
       <p class="eyebrow">WE'RE EASY TO FIND</p>
@@ -160,5 +179,7 @@
     <p>Good food. Good times. See you at Aahaa.</p>
     <p>© 2026 Aahaa Restaurant, Anaparthi.</p>
   </footer>
+  <script src="menu-data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
